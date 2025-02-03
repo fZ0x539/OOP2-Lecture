@@ -1,12 +1,14 @@
 package se.lexicon.model;
 
 public enum Size {
-    SMALL("S", 9.99), MEDIUM("M", 11.99), LARGE("L", 12.99);
+    SMALL("Small Fries", 9.99),
+    MEDIUM("Medium Fries", 11.99),
+    LARGE("Large Fries", 12.99);
 
     private double price;
     private String title;
 
-    Size(String title, double price){
+    Size(String title, double price) {
         this.title = title;
         this.price = price;
     }
