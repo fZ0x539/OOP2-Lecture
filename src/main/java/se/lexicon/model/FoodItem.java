@@ -2,7 +2,7 @@ package se.lexicon.model;
 
 import java.util.Objects;
 
-public class FoodItem{
+public abstract class FoodItem{
     private String name;
     private final double price;
 
@@ -29,4 +29,6 @@ public class FoodItem{
     protected String getDescription(){
         return "Item: " + name + ", Price: " + price;
     }
+
+    public abstract double calculateTax();
 }

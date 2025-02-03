@@ -1,6 +1,8 @@
 package se.lexicon;
 
 import se.lexicon.model.Burger;
+import se.lexicon.model.Fries;
+import se.lexicon.model.Size;
 
 public class Main {
     public static void main(String[] args) {
@@ -9,6 +11,14 @@ public class Main {
         System.out.println(beefBurger.getDescription());
         System.out.println(chickenBurger.getDescription());
         System.out.println(beefBurger.toString());
+        System.out.println();
+
+        var smallFries = new Fries(Size.SMALL, true, false);
+        var largeFries = new Fries(Size.LARGE);
+        var mediumFries = new Fries();
+        System.out.println(smallFries.getDescription());
+        System.out.println(mediumFries.toString());
+        System.out.println(largeFries.getDescription());
     }
 }
 

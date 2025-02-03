@@ -48,4 +48,9 @@ public class Burger extends FoodItem {
                 '}';
     }
 
+    @Override
+    public double calculateTax(){
+        return super.getPrice() * 0.1; // 10% tax
+    }
+
 }
